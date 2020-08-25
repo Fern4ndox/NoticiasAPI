@@ -1,7 +1,6 @@
 import React, {Fragment, useState, useEffect} from 'react';
 import Header from './components/Header'
 import Formulario from './components/Formulario'
-import useSelect from './hooks/useSelect';
 import ListadoNoticias from './components/ListadoNoticias'
 
 function App() {

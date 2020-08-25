@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
  
 const Noticias = ({noticia}) => {
@@ -9,7 +10,7 @@ const Noticias = ({noticia}) => {
     const imagen = (urlToImage) ?
         
         <div className="card-image" alt={title}>
-        <img src={urlToImage}/>
+        <img src={urlToImage} alt={description}/>
         <span className="card-title">{source.name}</span>
         </div>
     : null;
@@ -35,5 +36,8 @@ const Noticias = ({noticia}) => {
 
      );
 }
- 
+
+Noticias.propTypes = {
+    noticia: PropTypes.object.isRequired
+}
 export default Noticias;
